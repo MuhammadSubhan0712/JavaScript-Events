@@ -1,15 +1,12 @@
 // Events :
 
-let email = document.querySelector(".email");
-let pass = document.querySelector(".password");
+const email = document.querySelector("#email");
+const pass = document.querySelector("#password");
+const form = document.querySelector("#form");
 
 
-email.addEventListener("click" , function(){
+form.addEventListener("submit" , function()
+{
     console.log(email.value);
-}
-)
-
-pass.addEventListener("submit" , function(){
     console.log(pass.value);
-}
-)
+})
