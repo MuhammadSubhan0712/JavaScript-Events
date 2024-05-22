@@ -12,7 +12,8 @@ const Act = document.querySelector("#Activities");
 Gender = [];
 Act = [];
 
-reg.addEventListener('submit' , function(){
+reg.addEventListener('submit' , function(events){
+    events.preventDefault();
     console.log("Name: ",names.value);
     console.log("Father Name: ",fname.value);
     console.log("Mobile No: ",Mob.value);
