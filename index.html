@@ -7,60 +7,64 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="">
+  <body>
+ <div class="main">
+  <div class="register">
     <h1 class=""><strong> Student-Info </strong></h1>
-
-    <form id="form" class="form-container">
-
-      <div class="">
+    <form id="form register" class="form-container">
+      <div class="register">
+      <div class="input-container">
         <label>Username: </label>
-        <input type="text" id="Username" placeholder="Min:4char & Max:15char" />
+        <input type="text" id="Username" placeholder="Min:4char & Max:15char" required />
       </div>
     
-      <div class="">
+      <div class="input-container">
         <label>Email: </label>
-        <input type="text" id="email" placeholder="Proper Format" />
+        <input type="text" id="email" placeholder="Proper Format" required />
       </div>
 
-      <div class="">
+      <div class="input-container">
         <label>Password: </label>
-        <input type="password" id="password" placeholder="Min:8char 1 Special char" />
+        <input type="password" id="password" placeholder="Min:8char 1 Special char" required />
       </div>
 
-      <div class="">
+      <div class="input-container">
         <label>Father_Name: </label>
-        <input id="fname" type="text" name="Father_Name" />
+        <input id="fname" type="text" name="Father_Name" required/>
       </div>
 
 
-      <div class="">
+      <div class="input-container">
         <label>CNIC: </label>
-        <input id="cnic" type="text" name="cnic" placeholder="Pakitani CNIC Starts 42"/>
+        <input id="cnic" type="text" name="cnic" placeholder="Pakitani CNIC Starts 42" required/>
       </div>
 
-      <div class="">
+      <div class="input-container">
         <label>Age: </label>
-        <input id="age" type="number" name="age" />
+        <input id="age" type="number" name="age" required/>
       </div>
 
-      <div class="">
+      <div class="input-container">
         <label>Mobile_No: </label>
-        <input id="Mobile" type="number" name="Mobile_No" placeholder="Format i.e.:03XXXXXXXX" />
+        <input id="Mobile" type="number" name="Mobile_No" placeholder="Format i.e.:03XXXXXXXX" required />
       </div>
 
 
-      <div class="">
+      <div class="input-container">
         <label>Address: </label>
-        <input id="Address" type="text" name="Address" />
+        <input id="Address" type="text" name="Address" required/>
       </div>
 
-      <div class="">
+      <div class="input-container">
         <label>Date_of_Birth:</label>
         <input id="Dob" type="date" name="Dob" required/>
       </div>
 
       <button type="submit"> Submit </button>
+      </div>
       <script src="app.js"></script>
     </form>
+  </div>
+ </div>
   </body>
 </html>
