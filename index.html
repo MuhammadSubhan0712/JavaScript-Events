@@ -10,7 +10,7 @@
   <body class="">
     <h1 class=""><strong> Student-Info </strong></h1>
 
-    <form onsubmit="return Validation()" id="Register" class="form-container">
+    <form id="form" class="form-container">
 
       <div class="">
         <label>Username: </label>
@@ -19,17 +19,12 @@
     
       <div class="">
         <label>Email: </label>
-        <input type="email" id="email" placeholder="Proper Format" />
+        <input type="text" id="email" placeholder="Proper Format" />
       </div>
 
       <div class="">
         <label>Password: </label>
         <input type="password" id="password" placeholder="Min:8char 1 Special char" />
-      </div>
-
-      <div class="">
-        <label>Full_Name: </label>
-        <input id="name" type="text" name="name" />
       </div>
 
       <div class="">
@@ -40,7 +35,7 @@
 
       <div class="">
         <label>CNIC: </label>
-        <input id="cnic" type="number" name="cnic" placeholder="Pakitani CNIC Starts 42"/>
+        <input id="cnic" type="text" name="cnic" placeholder="Pakitani CNIC Starts 42"/>
       </div>
 
       <div class="">
@@ -50,7 +45,7 @@
 
       <div class="">
         <label>Mobile_No: </label>
-        <input id="Mobile" type="number" name="Mobile_No" placeholder="Format i.e.:03xxxxxx" />
+        <input id="Mobile" type="number" name="Mobile_No" placeholder="Format i.e.:03XXXXXXXX" />
       </div>
 
 
@@ -61,10 +56,10 @@
 
       <div class="">
         <label>Date_of_Birth:</label>
-        <input id="Dob" type="date" name="Dob" />
+        <input id="Dob" type="date" name="Dob" required/>
       </div>
 
-      <button value="Submit"> Submit </button>
+      <button type="submit"> Submit </button>
       <script src="app.js"></script>
     </form>
   </body>
