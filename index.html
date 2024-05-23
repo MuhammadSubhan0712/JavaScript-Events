@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
 
     <link rel="stylesheet" href="style.css" />
- 
-</head>
-<body class="bg-dark" >
-  <h1 class="text-white bg-secondary text-center"><strong> Student-Info </strong></h1>
+  </head>
+  <body class="">
+    <h1 class=""><strong> Student-Info </strong></h1>
+
+    <form onsubmit="return Validation()" id="Register" class="form-container">
+
+      <div class="">
+        <label>Username: </label>
+        <input type="text" id="Username" placeholder="Min:4char & Max:15char" />
+      </div>
     
-  <form id="Register" class="bg-success mt-5 pd-5">
+      <div class="">
+        <label>Email: </label>
+        <input type="email" id="email" placeholder="Proper Format" />
+      </div>
 
-      
-    <div class="mt-3 pd-3">
-      <input
-        type="email"
-        id="email"
-        placeholder="Username"  />
-    </div>
+      <div class="">
+        <label>Password: </label>
+        <input type="password" id="password" placeholder="Min:8char 1 Special char" />
+      </div>
 
-    <div class="mt-3 pd-3">
-      <input
-        type="password"
-        id="password"
-        placeholder="Password" />
-    </div>
+      <div class="">
+        <label>Full_Name: </label>
+        <input id="name" type="text" name="name" />
+      </div>
 
-        <div class=" form-container text-white mt-3">
-        <div class=" pd-3">
-        <label  >Full_Name: </label>
-        <input id="name" type="text" name="name"  />
-        </div>
-
-
-        <div class="mt-3 pd-3">
-        <label 
-          >Father_Name: </label>
-        <input id="fname" type="text" name="Father_Name" 
-        />
-        </div>
-
-
-        <div class="mt-3 pd-3">
-        <label
-          >Mobile_No: 
-        </label>
-        <input id="Mobile" type="tel" name="Mobile_No" 
-        />
+      <div class="">
+        <label>Father_Name: </label>
+        <input id="fname" type="text" name="Father_Name" />
       </div>
 
 
-        <div class="mt-3 pd-3">
-        <label
-          >Telephone:  </label>
-          <input id="Tel" type="tel" name="Telephone"  />
+      <div class="">
+        <label>CNIC: </label>
+        <input id="cnic" type="number" name="cnic" placeholder="Pakitani CNIC Starts 42"/>
       </div>
 
-        <div class="mt-3 pd-3">
+      <div class="">
+        <label>Age: </label>
+        <input id="age" type="number" name="age" />
+      </div>
+
+      <div class="">
+        <label>Mobile_No: </label>
+        <input id="Mobile" type="number" name="Mobile_No" placeholder="Format i.e.:03xxxxxx" />
+      </div>
+
+
+      <div class="">
         <label>Address: </label>
-        <input id="Address" type="text" name="Address"  />
+        <input id="Address" type="text" name="Address" />
       </div>
 
-
-        <div class="mt-3 pd-3">
+      <div class="">
         <label>Date_of_Birth:</label>
         <input id="Dob" type="date" name="Dob" />
       </div>
-      <script src="reg.js">
-      </script>
 
-</body>
+      <button value="Submit"> Submit </button>
+      <script src="app.js"></script>
+    </form>
+  </body>
 </html>
