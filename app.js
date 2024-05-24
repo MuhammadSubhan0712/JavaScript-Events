@@ -1,20 +1,20 @@
 // // Events :
 
-const form = document.querySelector('#form');
-const user = document.querySelector("#Username");
-const email = document.querySelector("#email");
-const pass = document.querySelector("#password");
-const fname = document.querySelector("#fname");
-const cnic = document.querySelector("#cnic");
-const age = document.querySelector("#age");
-const Mob = document.querySelector("#Mobile");
-const Add = document.querySelector("#Address");
-const Dob = document.querySelector("#Dob");
+const form = document.querySelector('#Regform');
+const user = document.querySelector('#Username');
+const email = document.querySelector('#email');
+const pass = document.querySelector('#password');
+const fname = document.querySelector('#fname');
+const cnic = document.querySelector('#cnic');
+const age = document.querySelector('#age');
+const Mob = document.querySelector('#Mobile');
+const Add = document.querySelector('#Address');
+const Dob = document.querySelector('#Dob');
 
 
-form.addEventListener('submit' , (events)=>
+form.addEventListener('submit' , (event)=>
 {   
-    events.preventDefault();
+    event.preventDefault();
      
 var usernameRegex = /^[a-zA-Z0-9]{4,15}$/;
 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
